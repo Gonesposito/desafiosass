@@ -1,0 +1,942 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background: #240b36;
+    background: -webkit-linear-gradient(to top left,#240b36, #ac0c26, #240b36);
+    background: linear-gradient(to top left, #240b36, #c31432, #240b36);
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    margin-bottom: 0;
+    height: 100vh;
+
+    grid-template-areas:
+    "header header header"
+    ". cards ."
+    "footer footer footer";
+}
+
+
+.inicial h1 {                       /* header */
+    display: inline-block;
+    position: relative;
+    max-width: 50;
+    top: 15px;
+    padding: 8px;
+    font-family: 'Aldrich', sans-serif;
+}               
+
+.inicial h1:hover {
+    background-color: #240b36;
+    border-radius: 50px;
+    opacity: .7;
+    transition: 400ms;
+}
+
+header {
+    grid-area: header;
+}
+
+.ge {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.animacion {
+    animation: bounceOut;
+  animation-duration: 2s;
+}
+
+.menu {          
+    display: flex;
+    justify-content: center;               
+    text-align: center;
+}
+.menu li {
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+    font-family: 'Julius Sans One', sans-serif;
+    }                    
+
+.menu li:hover{
+    background-color: #240b36;
+    border-radius: 20ch;
+    padding: 5px 10px;
+    opacity: .7;
+    transition: 700ms;
+}                             
+
+.menu a{                         
+    color: white;
+}                    
+
+
+.main-cuadrados {                   /* index */        /*empieza el main*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-evenly;    
+    padding: 50px 50px;
+    font-family: 'Aldrich', sans-serif;
+    letter-spacing: 1px;
+    grid-area: cards;
+}
+
+
+.main-cuadrados1 {                /* tarjeta n1 */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    height: 350px;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: -5px -5px 10px -3px #322f35, -5px -5px 5px 5px #322f35;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.main-cuadrados1 h3 {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    border-radius: 50%;
+    font-weight: none;
+}
+
+.main-cuadrados1:hover {            /* hover tarjeta1 */
+    background-color: #240b36;
+    box-shadow: none;
+    opacity: .6;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+.main-cuadrados2 {                 /* tarjeta n2 */
+    background: -webkit-linear-gradient(to right, #240b36, #355C7D);
+    height: 350px;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: -5px -5px 10px -3px #322f35, -5px -5px 5px 5px #322f35;
+    overflow: hidden;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.main-cuadrados2 h3 {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.main-cuadrados2:hover {            /* hover tarjeta2 */
+    background-color: #240b36;
+    opacity: .6;
+    box-shadow: none;
+    transition: 350ms;
+    cursor: pointer;                  
+}                                   /*termina index*/
+           
+
+
+.sec-footer h3 {                    /* Footer */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.sec-footer {
+    grid-area: footer;
+}
+
+.foot-projects {
+    background-repeat: no-repeat;
+}
+
+.foot-projects li {
+    margin-top: 50px;
+}
+
+.foot-projects h3 {
+    margin-top: 20px;
+}
+
+.foot-contact h3 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+footer {                          
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: footer;
+}
+
+footer li {
+    color: white;
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    padding: 5px 10px;
+}
+
+footer h3{
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: normal;
+}
+
+footer li a {
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+footer li a:hover { 
+    background-color: #240b36;
+    border-radius: 20ch;
+    padding: 5px 10px;
+    opacity: .7;
+}      
+
+footer h3:hover {
+    color: grey;
+}
+
+
+
+
+.body-about {                         /* about */
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "about about about"
+    "about-text about-text about-text"
+    "boton boton boton"
+    "foot-about foot-about foot-about";
+}
+
+header {
+    grid-area: header;
+}
+
+.about {
+    grid-area: about;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about-text {
+    grid-area: about-text;
+}
+
+.foot-about {
+    grid-area: foot-about;
+}
+
+.main-about {
+    width: 100vw;
+}
+
+.about-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.text {
+    width: 350px;
+    justify-content: s;
+}
+
+.text h2 {
+    margin-bottom: 20px;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.text p {
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 10px 20px;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+.botonprop {
+    border-radius: 50px;
+    padding: 10px 20px;
+    appearance: none;
+    background-color: transparent;
+    border: 2px grey solid;
+    font-size: 0.9em;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Aldrich', sans-serif;
+    margin-bottom: 20px;
+}
+
+.botonprop:hover {
+    background-color: rgb(24, 23, 23);
+    cursor: pointer;
+    color: white;
+    font-family: 'Aldrich', sans-serif;
+    transition: 450ms;
+    opacity: 0.8;
+}
+
+.body-projects {           /* Projects */
+    display: grid;
+    background: cover;
+    background-attachment: fixed;
+    height: 160vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "iconos iconos iconos"
+    ". projects-main ."
+    ". projects-main2 ."
+    "foot-projects foot-projects foot-projects";
+}
+
+header {
+    grid-area: header;
+}
+
+.main-projects {
+    width: 100vw;
+    margin-bottom: 50px;
+}
+
+.iconos {
+    grid-area: iconos;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.projects-main {
+    grid-area: projects-main;
+}
+
+.projects-main2 {
+    grid-area: projects-main2;
+}
+
+.foot-projects {
+    grid-area: foot-projects;
+}
+
+.htmlicon {
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.htmlicon img { 
+    width: 100px;
+    height: 100px;
+}
+
+.cssicon {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.cssicon img { 
+    width: 100px;
+    height: 100px;
+}
+
+.projects-main {                   /* Projects Main1*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.project1 img {
+    width: 270px;
+    height: 350px;
+    opacity: 0.2;
+    border-radius: 20px;
+    margin: 0px 50px;
+    margin-bottom: 25px; 
+}
+
+.project2 img {
+    width: 270px;
+    height: 350px;
+    opacity: 0.2;
+    border-radius: 20px;
+    margin: 0px 50px;
+    margin-bottom: 25px;
+}
+
+
+.projects-main2 {                   /* Projects Main2*/
+    width: 100%;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.project1 img:hover {            /* hover projects */
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.project2 img:hover { 
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.project3 img:hover {   
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.espacio {
+    margin-top: 150px;
+}                              /* Contacto */
+
+.body-form {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "contact-form contact-form contact-form"
+    "foot-contacteiner foot-contacteiner foot-contacteiner";
+}
+
+header {
+    grid-area: header;
+}
+
+.contact-form {
+    grid-area: contact-form;
+}
+
+.foot-contacteiner { 
+    grid-area: foot-contacteiner;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.form {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+}
+
+.form input textarea {
+    text-align: center;
+}
+
+input {
+        background-color: transparent;
+        color: #361a1f;
+        font-size: 25px;
+        padding: 10px 10px 5px 5px;
+        width: 100%;
+        border: none;
+        font-family: "Aldrich", sans-serif;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        outline: none;
+        text-align: center;
+}
+
+input:hover {
+    opacity: 0.7;
+}
+
+textarea {
+    background-color: transparent;
+    color: #361a1f;
+    font-size: 20px;
+    padding: 10px 10px 5px 5px;
+    width: 100%;
+    border: none;
+    font-family: "Julius Sans One", sans-serif;
+    appearance: none;
+    outline: none;
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+textarea:hover {
+    opacity: 0.9;
+    font-weight: bold;
+}
+
+.titulo-contacto-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    color: grey;
+    font-size: 1.6rem;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.titulo-contacto a:hover {
+ opacity: 0.7;
+ color: #322f35;
+ cursor: pointer;
+}
+
+.titulo-contacto a {
+    font-family: "Aldrich", sans-serif;
+    color: transparent;
+    right: 20px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+    margin-top: 0;
+}
+
+.enviar {
+    color: grey;
+    border: 0.5px grey;
+    border-radius: 10px;
+    padding: 10px 20px;
+    bottom: 150px;
+    left: 15px;
+}
+
+.enviar:hover {
+    cursor: pointer;
+    color: #322f35;
+    border: none;
+}
+
+.borrar {
+    color: grey;
+    border: 0.5px grey;
+    border-radius: 10px;
+    padding: 10px 20px;
+    bottom: 150px;
+    left: 15px;
+}
+
+.borrar:hover {
+    cursor: pointer;
+    color: #322f35;
+    border: none;
+}
+
+input text {
+    justify-content: center;
+}
+
+.foot-about {
+    margin: 40px 15px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0px 0px;
+}
+
+.icon-icon {
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    margin-right: 20px;
+}
+
+.icon:hover {
+    color: white;
+}
+
+
+@media screen and (max-width: 1412px) {         /* Responsive */
+    body {                                     
+        height: 100%;
+        grid-template-areas:
+        ". header ."
+        ". cards ."
+        ". footer .";
+        background-attachment: fixed;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: center;
+    } 
+
+    .inicial ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    li {
+        height: 100px;
+        align-items: center;
+    }
+
+    .main-cuadrados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-cuadrados1 {
+        margin-bottom: 30px;
+    }
+
+    .body-about {
+        height: 100vh;
+        grid-template-areas:
+        "header header header"
+        ". about ."
+        ". about-text ."
+        ". boton ."
+        "foot-about foot-about foot-about";
+    }
+
+}
+
+@media screen and (max-width: 890px) {
+
+    .body-about {
+        height: 100vh;
+        grid-template-areas:
+        "header header header"
+        ". about ."
+        ". about-text ."
+        ". boton ."
+        "foot-about foot-about foot-about";
+    }
+
+    .body-projects {                /* MediaQ Projects */
+        grid-template-areas: 
+        "header header header"
+        ". iconos ."
+        ". projects-main ."
+        ". projects-main2 ."
+        "foot-projects foot-projects foot-projects";
+        }
+    
+        .projects-main {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .projects-main2 {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .main-projects {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+          
+        .project1 img {
+            opacity: 1;
+        } 
+    
+        .project2 img {
+            opacity: 1;
+        }
+    
+        .main-cuadrados {
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            align-content: space-around;
+            margin-bottom: 75px;
+        }
+    
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .about h1 {
+        margin-bottom: 150px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    } 
+
+    .text p {
+        margin-bottom: 25px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boton {
+        display: flex;
+        flex-direction: column;
+        margin: 150px 500px;
+        margin-bottom: 25px;
+    }
+    .foot-about h3 {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    .botonprop {
+        background-color: rgb(24, 23, 23);
+        border-radius: 50px;
+        padding: 10px 20px;
+        appearance: none;
+        border: 2px grey solid;
+        font-size: 0.9rem;
+    }
+
+@media screen and (max-width: 392px) {
+    .inicial ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .body-projects {                /* MediaQ Projects */
+    grid-template-areas: 
+    "header header header"
+    ". iconos ."
+    ". projects-main ."
+    ". projects-main2 ."
+    "foot-projects foot-projects foot-projects";
+    background-attachment: fixed;
+    }
+
+    .foot-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-main2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .project1 img {
+        opacity: 1;
+    } 
+
+    .project2 img {
+        opacity: 1;
+    }
+
+    .main-cuadrados {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        align-content: space-around;
+        margin-bottom: 75px;
+    }
+
+
+
+    .body-about {                       /* MediaQ About */
+        height: 90vh;
+        grid-template-areas:
+        "header header header"
+        ". about ."
+        ". about-text ."
+        ". boton ."
+        "foot-about foot-about foot-about";
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .about h1 {
+        margin-bottom: 150px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    } 
+
+    .text p {
+        margin-bottom: 25px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boton {
+        display: flex;
+        flex-direction: column;
+        margin: 150px 50px;
+        margin-bottom: 25px;
+    }
+
+    .botonprop {
+        background-color: rgb(24, 23, 23);
+        border-radius: 50px;
+        padding: 10px 20px;
+        appearance: none;
+        border: 2px grey solid;
+        font-size: 0.9rem;
+    }
+
+    .foot-about h3 {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .contact-form {                 /* MediaQ Contact */
+        grid-template-areas:
+        "header header header"
+        ". contact-form ."
+        "foot-contacteiner foot-contacteiner foot-contacteiner";
+
+        height: 100vh;
+        margin-bottom: 0;
+    }
+    .titulo-contacto-hover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo-contacto a {
+        display: none;
+    }
+
+    .titulo-contacto {
+        width: 150px;
+        display: flex;
+    }
+
+    .foot-contacteiner h3 {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    .formulario {
+        position: relative;
+        top: 150px;
+    }
+}
+}
