@@ -1,0 +1,5 @@
+* Se colocaron los títulos en todas las páginas
+* Se pusieron las meta description y palabras clave
+* Imágenes optimizadas, se agregaron los "alts"
+* Se chequearon que las etiquetas h1,h2 etc no abunden para ayudar a la navegación
+* Se cambió el texto en la página "about" para ayudar la búsqueda -tentativo-

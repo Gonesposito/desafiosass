@@ -1,6 +1,7 @@
 @import "footer";
 $fondo: #240b36;
 $letra: white;
+$hovboton: rgb(24, 23, 23);
 
 * {
     margin: 0;
@@ -50,6 +51,20 @@ header {
         font-family: 'Aldrich', sans-serif;
     }
 }
+
+@mixin boton {            /* MIXIN */
+        border-radius: 50px;
+        padding: 10px 20px;
+        appearance: none;
+        background-color: transparent;
+        border: 2px grey solid;
+        font-size: 0.9em;
+        margin-top: 20px;
+        cursor: pointer;
+        font-family: 'Aldrich', sans-serif;
+        margin-bottom: 20px;
+}
+
 nav {
     display: flex;
     justify-content: center;               
@@ -106,9 +121,8 @@ main {
             justify-content: center;
             align-items: center;
             text-align: center;
-
 }
-.about-text {
+.about-text {                       /* EXTEND */
     @media (max-width: 890px) {
         grid-area: text;
         display: flex;
@@ -116,10 +130,7 @@ main {
         justify-content: center;
     }
     grid-area: text;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    @extend .about;
     margin-top: 50px;
 }
 .text {
@@ -152,18 +163,9 @@ main {
     display: flex;
     justify-content: center;
     button {
-        border-radius: 50px;
-        padding: 10px 20px;
-        appearance: none;
-        background-color: transparent;
-        border: 2px grey solid;
-        font-size: 0.9em;
-        margin-top: 20px;
-        cursor: pointer;
-        font-family: 'Aldrich', sans-serif;
-        margin-bottom: 20px;
+        @include boton;
         &:hover {
-            background-color: rgb(24, 23, 23);
+            background-color: $hovboton;
         cursor: pointer;
         color: $letra;
         font-family: 'Aldrich', sans-serif;
