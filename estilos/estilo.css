@@ -433,6 +433,7 @@ header {
 .card:hover {            /* hover projects */
     cursor: pointer;
     opacity: 0.8;
+    transition: 0.8s;
 }
 
                           /* Contacto */
