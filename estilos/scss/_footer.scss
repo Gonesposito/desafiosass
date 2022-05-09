@@ -21,6 +21,11 @@ footer {
             color: grey;
         }
     }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
     li {
         color: white;
         display: inline-block;
@@ -40,4 +45,5 @@ footer {
         }
     }
     }
+}
 }

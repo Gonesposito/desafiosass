@@ -19,21 +19,25 @@ footer {
     font-weight: normal; }
     footer h3:hover {
       color: grey; }
-  footer li {
-    color: white;
-    display: inline-block;
-    position: relative;
-    width: 90%;
-    padding: 5px 10px; }
-    footer li a {
-      align-items: center;
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    footer ul li {
       color: white;
-      text-decoration: none; }
-      footer li a:hover {
-        background-color: #240b36;
-        border-radius: 20ch;
-        padding: 5px 10px;
-        opacity: .7; }
+      display: inline-block;
+      position: relative;
+      width: 90%;
+      padding: 5px 10px; }
+      footer ul li a {
+        align-items: center;
+        color: white;
+        text-decoration: none; }
+        footer ul li a:hover {
+          background-color: #240b36;
+          border-radius: 20ch;
+          padding: 5px 10px;
+          opacity: .7; }
 
 * {
   margin: 0;
