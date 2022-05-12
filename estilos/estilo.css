@@ -172,6 +172,10 @@ header {
     grid-area: footer;
 }
 
+.sec-footer img {
+    color: white;
+}
+
 .foot-projects ul {
     background-repeat: no-repeat;
     display: flex;
@@ -701,7 +705,7 @@ input text {
             display: none;
         }
     
-        .projects-main {
+       .projects-main {
             display: flex;
             flex-direction: column;
         }
@@ -716,7 +720,7 @@ input text {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
+        } 
           
         .project1 img {
             opacity: 1;
@@ -783,7 +787,7 @@ input text {
         font-size: 0.9rem;
     }
 
-@media screen and (max-width: 392px) {
+@media screen and (max-width: 392px) {  /* MediaQ smartphone */
     .inicial ul {
         display: flex;
         flex-direction: column;
@@ -792,7 +796,7 @@ input text {
         text-align: center;
     }
 
-    .body-projects {                /* MediaQ Projects */
+    .body-projects {                
     grid-template-areas: 
     "header header header"
     ". iconos ."
@@ -809,31 +813,7 @@ input text {
         align-items: center;
     }
 
-    .projects-main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .projects-main2 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .main-projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-      
-    .project1 img {
-        opacity: 1;
-    } 
-
-    .project2 img {
-        opacity: 1;
-    } */
-
+  
     .main-cuadrados {
         width: 100%;
         flex-direction: column;
