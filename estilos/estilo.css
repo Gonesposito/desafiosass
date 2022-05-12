@@ -231,6 +231,7 @@ footer li a {
 }
 
 footer li a:hover { 
+    color: white;
     background-color: #240b36;
     border-radius: 20ch;
     padding: 5px 10px;
@@ -404,23 +405,31 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 120px;
+    margin-bottom: 0px;
 }
+
 
 .card {
     border: none;
     opacity: 0.3;
+    height: 550px;
 }
 
 .card img {
     border-top: 20px;
-    height: 250px;
+    height: 235px;
+} 
+
+.card h5 {
+    font-family: 'Aldrich', sans-serif;
 }
 
 .card-body {
     /* background: #240b36; */
-    background: -webkit-linear-gradient(to top left,#240b36, #ac0c26, #240b36);
-    background: linear-gradient(to top left, #240b36, #c31432, #240b36);
+    /* background: -webkit-linear-gradient(to top left,#240b36, #ac0c26, #240b36);
+    background: linear-gradient(to top left, #240b36, #c31432, #240b36); */
+    background: transparent;
 }
 
 
@@ -678,6 +687,7 @@ input text {
         "foot-about foot-about foot-about";
     }
 
+
     .body-projects {                /* MediaQ Projects */
         grid-template-areas: 
         "header header header"
@@ -822,7 +832,7 @@ input text {
 
     .project2 img {
         opacity: 1;
-    }
+    } */
 
     .main-cuadrados {
         width: 100%;
