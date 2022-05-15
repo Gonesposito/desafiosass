@@ -383,25 +383,6 @@ header {
     grid-area: foot-projects;
 }
 
-/* .htmlicon {
-    margin-right: 50px;
-    margin-top: 20px;
-} */
-
-/* .htmlicon img { 
-    width: 100px;
-    height: 100px;
-} */
-
-/* .cssicon {
-    margin-left: 50px;
-    margin-top: 20px;
-} */
-
-/* .cssicon img { 
-    width: 100px;
-    height: 100px;
-} */
 
 .projects-main {                   /* Projects Main1*/
     width: 100%;
@@ -428,14 +409,6 @@ header {
 .card h5 {
     font-family: 'Aldrich', sans-serif;
 }
-
-.card-body {
-    /* background: #240b36; */
-    /* background: -webkit-linear-gradient(to top left,#240b36, #ac0c26, #240b36);
-    background: linear-gradient(to top left, #240b36, #c31432, #240b36); */
-    background: transparent;
-}
-
 
 .card-text {
     font-family: 'Julius Sans One', sans-serif;
